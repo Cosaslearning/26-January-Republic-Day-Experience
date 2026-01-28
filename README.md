@@ -171,13 +171,5 @@ If you extend or refactor this, consider keeping:
 - Accessibility and reduced‑motion support.
 - The dependency‑free, static‑host‑friendly setup.
 
----
 
-### License
-
-You can add your preferred license here (for example, MIT), e.g.:
-
-```text
-MIT License – see LICENSE file for details.
-```
 
