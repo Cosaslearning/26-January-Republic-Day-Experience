@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive 26 January Republic Day experience (HTML/CSS/JS)."
+    />
+    <title>26 January • Republic Day Experience</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Skip to content</a>
+
+    <main id="app" class="app" aria-live="polite">
+      <div class="bg-grain" aria-hidden="true"></div>
+
+      <section class="scene is-active" data-scene="0" aria-label="Landing">
+        <div class="center">
+          <p class="kicker">Vande Mataram</p>
+          <h1 class="title">Happy Republic Day</h1>
+          <p class="subtitle">26 January • Republic Day of India</p>
+          <div class="actions">
+            <button class="btn btn-primary" data-action="start">Start</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" data-scene="1" aria-label="Countdown">
+        <div class="center">
+          <div class="countdown" aria-label="Countdown number">
+            <span id="countdownNumber" class="countdown-number">3</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" data-scene="2" aria-label="Typewriter quote">
+        <div class="center">
+          <p class="typewriter" aria-label="Message">
+            <span id="typewriterText"></span
+            ><span class="caret" aria-hidden="true"></span>
+          </p>
+        </div>
+      </section>
+
+      <section class="scene" data-scene="3" aria-label="Date card">
+        <div class="center">
+          <p class="date"><span class="date-accent">26</span> January</p>
+          <p class="subtitle">Republic Day of India</p>
+        </div>
+      </section>
+
+      <section class="scene" data-scene="4" aria-label="Flag reveal">
+        <div class="center">
+          <div class="flag-wrap" aria-label="Indian flag">
+            <div class="flag" role="img" aria-label="Indian flag">
+              <div class="band band-saffron"></div>
+              <div class="band band-white"></div>
+              <div class="band band-green"></div>
+              <div class="charka" aria-hidden="true">
+                <!-- Inline SVG: crisp, offline, no external assets -->
+                <svg
+                  viewBox="-52 -52 104 104"
+                  width="92"
+                  height="92"
+                  role="img"
+                  aria-label="Ashoka Chakra"
+                >
+                  <circle cx="0" cy="0" r="32" fill="none" stroke="currentColor" stroke-width="3" />
+                  <circle cx="0" cy="0" r="4.5" fill="currentColor" />
+                  <!-- 24 spokes -->
+                  <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="0" y1="-32" x2="0" y2="-6" />
+                    <line x1="0" y1="32" x2="0" y2="6" />
+                    <line x1="-32" y1="0" x2="-6" y2="0" />
+                    <line x1="32" y1="0" x2="6" y2="0" />
+                    <line x1="16" y1="-27.712" x2="3" y2="-5.2" />
+                    <line x1="-16" y1="-27.712" x2="-3" y2="-5.2" />
+                    <line x1="16" y1="27.712" x2="3" y2="5.2" />
+                    <line x1="-16" y1="27.712" x2="-3" y2="5.2" />
+                    <line x1="27.712" y1="-16" x2="5.2" y2="-3" />
+                    <line x1="27.712" y1="16" x2="5.2" y2="3" />
+                    <line x1="-27.712" y1="-16" x2="-5.2" y2="-3" />
+                    <line x1="-27.712" y1="16" x2="-5.2" y2="3" />
+                    <line x1="22.627" y1="-22.627" x2="4.2" y2="-4.2" />
+                    <line x1="-22.627" y1="-22.627" x2="-4.2" y2="-4.2" />
+                    <line x1="22.627" y1="22.627" x2="4.2" y2="4.2" />
+                    <line x1="-22.627" y1="22.627" x2="-4.2" y2="4.2" />
+                    <line x1="30.91" y1="-8.286" x2="5.8" y2="-1.55" />
+                    <line x1="30.91" y1="8.286" x2="5.8" y2="1.55" />
+                    <line x1="-30.91" y1="-8.286" x2="-5.8" y2="-1.55" />
+                    <line x1="-30.91" y1="8.286" x2="-5.8" y2="1.55" />
+                    <line x1="8.286" y1="-30.91" x2="1.55" y2="-5.8" />
+                    <line x1="-8.286" y1="-30.91" x2="-1.55" y2="-5.8" />
+                    <line x1="8.286" y1="30.91" x2="1.55" y2="5.8" />
+                    <line x1="-8.286" y1="30.91" x2="-1.55" y2="5.8" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <p class="tagline">
+            <span class="tag tag-saffron">FREEDOM</span>
+            <span class="dot">•</span>
+            <span class="tag tag-white">UNITY</span>
+            <span class="dot">•</span>
+            <span class="tag tag-green">CONSTITUTION</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="scene" data-scene="5" aria-label="Quote">
+        <div class="center quote-card">
+          <div class="quote-bar" aria-hidden="true"></div>
+          <blockquote class="quote">
+            “Freedom is not free —<br />
+            it’s built with courage, protected by sacrifice.”
+          </blockquote>
+          <p class="quote-by">— Jai Hind</p>
+        </div>
+      </section>
+
+      <section class="scene" data-scene="6" aria-label="Finale">
+        <canvas id="confettiCanvas" class="confetti" aria-hidden="true"></canvas>
+        <div class="center">
+          <div class="badge" aria-hidden="true">↑</div>
+          <h2 class="finale-title">Happy Republic Day</h2>
+          <p class="subtitle">From a proud Indian developer</p>
+          <p class="subtitle">Let’s build a future worthy of our flag.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
